@@ -10,3 +10,52 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      Ataques de Tubarão em Pernambuco
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bem-vindo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Esta aplicação tem como objetivo informar sobre os ataques de tubarão registrados no estado de Pernambuco, Brasil.
+      Aqui você poderá visualizar dados históricos, locais mais recorrentes, e entender o contexto desses eventos.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Importância do tema</ion-card-subtitle>
+      <ion-card-title>Segurança e conscientização</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Os registros de ataques de tubarão ao longo dos anos chamaram atenção da mídia e da população.
+      Esta aplicação busca promover a conscientização pública e apoiar pesquisas relacionadas à segurança marítima.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Próximos passos</ion-card-subtitle>
+      <ion-card-title>Navegue no menu</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Acesse as seções do aplicativo para ver a lista de ataques, dados estatísticos, ou informações educativas.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-button [routerLink]="['/ataque']" routerLinkActive="router-link-active" >Ver Ataques Registrados</ion-button>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>

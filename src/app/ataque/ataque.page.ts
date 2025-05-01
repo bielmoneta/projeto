@@ -16,7 +16,7 @@ export class AtaquePage implements OnInit {
   ngOnInit() {
     this.ataque.getAllAtaques().subscribe((dados: any) => {
       console.log(dados);
-      this.tubaroes = dados;
+      this.tubaroes = dados.results;
     });
   }
 
