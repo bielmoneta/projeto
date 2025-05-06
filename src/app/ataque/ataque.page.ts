@@ -4,7 +4,7 @@ import { TubaapiService } from '../services/tubaapi.service';
 @Component({
   selector: 'app-ataque',
   templateUrl: './ataque.page.html',
-  styleUrls: ['./ataque.page.scss'],
+  styleUrls: ['./ataque.page.scss'],  
   standalone: false
 })
 export class AtaquePage implements OnInit {
