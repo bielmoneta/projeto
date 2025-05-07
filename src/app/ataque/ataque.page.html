@@ -15,7 +15,7 @@
   <ion-card *ngFor="let ataque of tubaroes">
     <ion-card-header>
       <ion-card-subtitle>{{ ataque.area }}</ion-card-subtitle>
-      <ion-card-title>{{ ataque.location || pipes }}</ion-card-title>
+      <ion-card-title>{{ ataque.location | pipes }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <p><strong>Data:</strong> {{ ataque.date }}</p>
@@ -25,11 +25,13 @@
 </ion-content>
 
 <ion-content fullscreen="true" *ngIf="tubaroes.length === 0">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Sem ataques</ion-card-subtitle>
-      <ion-card-title>Não há ataques registrados</ion-card-title>
-    </ion-card-header>
+  <ion-card *ngFor="let ataque of tubaroes">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Sem ataques</ion-card-subtitle>
+        <ion-card-title>Não há ataques registrados</ion-card-title>
+      </ion-card-header>
+    </ion-card>
   </ion-card>
 </ion-content>
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TubaapiService } from '../services/tubaapi.service';
+import { PipesPipe } from '../pipes/pipes.pipe';
 
 @Component({
   selector: 'app-ataque',
