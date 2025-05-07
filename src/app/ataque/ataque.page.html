@@ -15,7 +15,7 @@
   <ion-card *ngFor="let ataque of tubaroes">
     <ion-card-header>
       <ion-card-subtitle>{{ ataque.area }}</ion-card-subtitle>
-      <ion-card-title>{{ ataque.location || 'Local não informado' }}</ion-card-title>
+      <ion-card-title>{{ ataque.location || pipes }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <p><strong>Data:</strong> {{ ataque.date }}</p>
