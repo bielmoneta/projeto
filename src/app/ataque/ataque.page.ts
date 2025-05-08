@@ -4,6 +4,7 @@ import { PipesPipe } from '../pipes/pipes.pipe';
 
 @Component({
   selector: 'app-ataque',
+  imports: [PipesPipe],
   templateUrl: './ataque.page.html',
   styleUrls: ['./ataque.page.scss'],  
   standalone: false
